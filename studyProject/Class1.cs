@@ -25,6 +25,23 @@ namespace studyProject
             int mul = x * y * z;
             Console.WriteLine(mul);
             Console.WriteLine("{0},{1},{2}", x, y, z);
+
+            Console.WriteLine("암호는?");
+            string answer = Console.ReadLine();
+            Console.WriteLine(answer);
+
+            Console.WriteLine(sum + 5);
+
+            int bit = 2;
+
+            Console.WriteLine(bit << 2); // 이진수로 변환 2^3 자리로 가서 8 나옴
+
+            Console.WriteLine("숫자 입력: ");
+            string answer2 = Console.ReadLine();
+            int answer3 = int.Parse(answer2);
+            Console.WriteLine(answer3);
+            string result = (answer3 % 2 == 0) ? "짝수" : "홀수";
+            Console.WriteLine(result);
         }
     }
 }
