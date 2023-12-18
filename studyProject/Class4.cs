@@ -21,6 +21,7 @@ namespace studyProject
             }
             */
 
+            /*
             int fact = 0;
             for(int i = 1; i <= 4; i++)
             {
@@ -31,6 +32,16 @@ namespace studyProject
                     fact *= j;
                 }
                 Console.WriteLine($"{fact,2}");
+            }
+            */
+
+            for(int i = 2; i <= 9; i++)
+            {
+                Console.WriteLine($"{i}단");
+                for(int j = 1; j <= 9; j++)
+                {
+                    Console.WriteLine($"{i} * {j} = {i * j}");
+                }
             }
         }
     }
