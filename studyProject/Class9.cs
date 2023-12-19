@@ -46,6 +46,17 @@ namespace studyProject
                 Console.WriteLine();
             }
 
+            var anything = new int[] { 1, 2, 3 };
+            for(int i = 0; i < anything.Length; i++)
+            {
+                Console.WriteLine(anything[i]);
+            }
+            for(int i= 0; i < anything.Length; i++)
+            {
+                string alphabet = ((char)('a' + i)).ToString();
+                anything[i] = int.Parse(alphabet);
+                Console.WriteLine(anything[i]);
+            }
         }
     }
 }
