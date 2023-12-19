@@ -26,12 +26,19 @@ namespace studyProject
             Console.WriteLine(result);
 
             Log("에러");
+            Log("에러", 22);
 
+            Minus(second: 5, first: 10); // 매개변수명 쓰면 순서 변경 가능
         }
 
-        static void Log(string message, byte level = 0)
+        static void Log(string message, byte level = 0) // 매개변수 기본값
         {
             Console.WriteLine($"{message}, {level}");
+        }
+
+        static void Minus(int first, int second)
+        {
+            Console.WriteLine(first - second);
         }
     }
 }
