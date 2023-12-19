@@ -23,6 +23,7 @@ namespace studyProject
             }
             */
 
+            /*
             int[,] arr = { { 1, 2, 3 }, { 4, 5, 6 } };
             for(int i = 0; i < 2; i++)
             {
@@ -30,6 +31,25 @@ namespace studyProject
                 {
                     Console.WriteLine($"arr[{i},{j}] = {arr[i, j]}");
                 }
+            }
+            */
+
+            int[,] arr = new int[3, 3];
+            for(int i = 0; i < 3; i++)
+            {
+                for(int j = 0; j < 3; j++)
+                {
+                    if(i == j)
+                    {
+                        arr[i, j] = 1;
+                    }
+                    else
+                    {
+                        arr[i, j] = 0;
+                    }
+                    Console.Write(arr[i, j]);
+                }
+                Console.WriteLine();
             }
         }
     }
