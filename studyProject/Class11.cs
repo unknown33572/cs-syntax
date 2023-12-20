@@ -24,6 +24,7 @@ namespace studyProject
             GetNumber("1234" + " 이건 string 타입 입니다.");
             GetNumber(5, 5);
             Factorial(10);
+            Console.WriteLine(RecursionPower(2, 2));
         }
 
         static void GetNumber(int number, int number2)
@@ -42,6 +43,15 @@ namespace studyProject
             result = x * Factorial(x - 1);
             Console.WriteLine(result);
             return result;// 복수의 수이면 재귀
+        }
+
+        static int RecursionPower(int num, int cnt)
+        {
+            if(cnt == 0)
+            {
+                return 1;
+            }
+            return num * RecursionPower(num, --cnt); //후위로 두면 카운트를 나중에 해서 결과가 다르게 나옴
         }
     }
 }
