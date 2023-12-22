@@ -18,6 +18,11 @@ namespace studyProject
             string koreanMessage = " 안녕하세요. 반갑습니다. 세상! "; // 공백있음
             Console.WriteLine(koreanMessage);
             Console.WriteLine(koreanMessage.Replace("반갑습니다.", "").Trim());
+            String str = "Welcome ";
+            int stringMeddleNum = message.Length / 2;
+            String temp = message.Substring(stringMeddleNum);
+            String resultStr = String.Concat(str, temp);
+            Console.WriteLine(resultStr);
         }
     }
 }
