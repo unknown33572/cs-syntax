@@ -23,6 +23,19 @@ namespace studyProject
             String temp = message.Substring(stringMeddleNum);
             String resultStr = String.Concat(str, temp);
             Console.WriteLine(resultStr);
+
+            string userName = "BlueDog";
+            Console.WriteLine("이름을 입력해주세요.");
+            string inputName = Console.ReadLine();
+
+            if(String.Equals(userName, inputName, StringComparison.InvariantCultureIgnoreCase))
+            {
+                Console.WriteLine($"{userName}과 {inputName}은 같습니다.");
+            }
+            else
+            {
+                Console.WriteLine("이름이 같지 않습니다.");
+            }
         }
     }
 }
