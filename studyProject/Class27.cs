@@ -29,7 +29,13 @@ namespace studyProject
                     new Class27 { Name = "Radio", Quantity = 3},
                     new Class27 { Name = "TV", Quantity = 1},
                     new Class27 { Name = "Radio", Quantity = 2},
-                    new Class27 { Name = "DVD", Quantity = 4}
+                    new Class27 { Name = "DVD", Quantity = 4},
+                    new Class27 { Name = "GameConsole", Quantity = 2},
+                    new Class27 { Name = "Computer", Quantity = 3},
+                    new Class27 { Name = "Computer", Quantity = 3},
+                    new Class27 { Name = "Radio", Quantity = 1},
+                    new Class27 { Name = "Phone", Quantity = 8},
+                    new Class27 { Name = "AirConditioner", Quantity = 1}
                 };
             }
 
@@ -67,20 +73,20 @@ namespace studyProject
                     }
                 }
             }
-
+            /*
             for (int i = 0; i < N - 1; i++)
             {
                 for (int j = i + 1; j < N; j++)
                 {
                     if (records[i].Quantity < records[j].Quantity) // 내림차순 정렬 조건
                     {
-                        var temp = records[i];
-                        records[i] = records[j];
-                        records[j] = temp;
+                        var temp = records[i].Quantity;
+                        records[i].Quantity = records[j].Quantity;
+                        records[j].Quantity = temp;
                     }
                 }
             }
-
+            */
             //PrintData("값은 : ", records);
 
             int subtotal = 0;
