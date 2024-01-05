@@ -8,5 +8,13 @@ namespace studyProject
 {
   class Class36
   {
+    static void Main()
+		{
+      int x = 1;
+      int y = 2;
+      int z = x + y;
+
+      Console.WriteLine(z);
+		}
   }
 }
