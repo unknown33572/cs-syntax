@@ -27,6 +27,9 @@ namespace studyProject
       int[] arr = { 2, 4, 1, 7, 12, 15 };
       InsertionSort(arr);
       Console.WriteLine(String.Join(", ", arr));
+
+      Calc(3, 3, (x1, y1) => x1 * y1);
+
 		}
 
     static void InsertionSort(int[] arr)
@@ -45,5 +48,7 @@ namespace studyProject
         arr[j + 1] = key;
 			}
 		}
+
+    static void Calc(int x, int y, Func<int, int, int> calc) => Console.WriteLine(calc(x, y));
   }
 }
