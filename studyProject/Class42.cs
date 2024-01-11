@@ -20,8 +20,10 @@ namespace studyProject
 	{
 		static void Main()
 		{
-			var car = new Car(); // 인터페이스는 인스턴스화 할 수 없으니 구현한 클래스로 인스턴스 객체 생성
+			ICar car = new Car(); // 인터페이스는 인스턴스화 할 수 없으니 구현한 클래스로 인스턴스 객체 생성
+			var varCar = new Car(); // var타입으로도 선언할 수 있음
 			car.go();
+			varCar.go();
 		}
 	}
 }
