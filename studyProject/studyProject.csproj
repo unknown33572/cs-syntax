@@ -36,7 +36,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class52.cs" />
+    <Compile Include="Class53.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="JavaScript1.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
