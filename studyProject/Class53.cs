@@ -38,7 +38,29 @@ namespace studyProject
     {
         public List<SignBase> GetAll()
         {
-            new SignBase() { SignID = 1}
+            var signs = new List<SignBase>()
+            {
+                new SignBase() { SignID = 1, Password = "1234" },
+                new SignBase() { SignID = 2, Password = "1234" },
+                new SignBase() { SignID = 3, Password = "1234" },
+            };
+
+            signs[0].setEmail("구글");
+            signs[1].setEmail("네이버");
+            signs[2].setEmail("다음");
+
+            return signs;
+        }
+    }
+
+    class SignContext
+    {
+        public List<SignBase> Signs
+        {
+            get
+            {
+                return (new SignRepository()).GetAll();
+            }
         }
     }
 }
