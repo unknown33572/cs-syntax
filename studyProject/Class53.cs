@@ -63,4 +63,17 @@ namespace studyProject
             }
         }
     }
+
+    class SignBaseSignRepository
+    {
+        static void Main()
+        {
+            var signs = (new SignContext()).Signs;
+
+            foreach(var sign in signs)
+            {
+                Console.WriteLine($"{sign.SignID}, {sign.Password}, {sign.getEmail()}");
+            }
+        }
+    }
 }
