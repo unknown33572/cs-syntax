@@ -48,6 +48,7 @@
   <ItemGroup>
     <Content Include="JavaScript1.js" />
     <Content Include="JavaScript2.js" />
+    <Content Include="JavaScript3.js" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
