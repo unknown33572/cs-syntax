@@ -1,11 +1,27 @@
-﻿fetch('https://jsonplaceholder.typicode.com/posts/1', {
-  method: 'PUT',
-  body: JSON.stringify({
-    id: 1,
-    title: 'foo',
-  }),
-  header: {
-    'content-type': 'application/json;
-  },
+﻿function solution(my_string) {
+  const words = my_string.trim().split(' ').filter(word => word !== '');
+  return words;
+}
 
-}).then((response) => response.json());
+function solution2(my_string) {
+  let words = [];
+  let currentWord = '';
+
+  for (let i = 0; i < my_string.length; i++) {
+    if (my_string[i] !== ' ') {
+      currentWord += my_string[i];
+    } else if (currentWord !== '') {
+      words.push(currentWord);
+      currentWord = '';
+    }
+  }
+
+  if (currentWord !== '') {
+    words.push(currentWord);
+  }
+
+  return words;
+}
+
+console.log(solution2("i love you"));
+console.log(solution2("  programmers "));
