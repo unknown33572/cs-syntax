@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-    class Class3
+    class Conditional
     {
         static void Main()
         {

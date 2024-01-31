@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-    class Class1
+    class Variable
     {
         static void Main(string[] args)
         {
