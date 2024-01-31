@@ -6,31 +6,27 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-    class Class5
+    class Class4
     {
         static void Main()
         {
-            /*
-            int count = 0;
-            Boolean flag = false;
-            while(!flag)
+
+            for(int i = 2; i <= 9; i++)
             {
-                Console.WriteLine($"{count}");
-                count++;
-                if(count == 3)
+                Console.WriteLine($"{i}단");
+                for(int j = 1; j <= 9; j++)
                 {
-                    flag = true;
+                    Console.WriteLine($"{i} * {j} = {i * j}");
                 }
             }
-            */
 
             string difficultSubject = "c#";
             string[] subject1 = { "java", "c#", "python", "js" };
 
-            foreach(string subject2 in subject1)
+            foreach (string subject2 in subject1)
             {
                 Console.WriteLine(subject2);
-                if(subject2.Contains(difficultSubject))
+                if (subject2.Contains(difficultSubject))
                 {
                     Console.WriteLine($"{subject2} 은 어려운 과목입니다.");
                 }
