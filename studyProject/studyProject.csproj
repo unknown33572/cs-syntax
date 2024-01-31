@@ -36,7 +36,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class58.cs" />
+    <Compile Include="cs\Class57.cs" />
     <Compile Include="Dul.Data\IBreadShop.cs" />
     <Compile Include="Dul.Data\OrderOption.cs" />
     <Compile Include="InMemoryDatabase\Category.cs" />
@@ -45,16 +45,18 @@
     <Compile Include="InMemoryDatabase\InMemoryDatabase.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="JavaScript1.js" />
-    <Content Include="JavaScript2.js" />
-    <Content Include="JavaScript3.js" />
-    <Content Include="JavaScript4.js" />
-    <Content Include="JavaScript5.js" />
-    <Content Include="JavaScript6.js" />
-    <Content Include="JavaScript7.js" />
-    <Content Include="JavaScript8.js" />
-    <Content Include="JavaScript9.js" />
+    <Content Include="js\JavaScript1.js" />
+    <Content Include="js\JavaScript2.js" />
+    <Content Include="js\JavaScript3.js" />
+    <Content Include="js\JavaScript4.js" />
+    <Content Include="js\JavaScript5.js" />
+    <Content Include="js\JavaScript6.js" />
+    <Content Include="js\JavaScript7.js" />
+    <Content Include="js\JavaScript8.js" />
+    <Content Include="js\JavaScript9.js" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="js\JavaScript10.js" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
