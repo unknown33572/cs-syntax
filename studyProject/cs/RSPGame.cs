@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-    class Class18
+    class RSPGame
     {
         static void Main()
         {

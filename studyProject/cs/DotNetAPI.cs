@@ -7,7 +7,7 @@ using System.Globalization;
 
 namespace studyProject
 {
-    class Class17
+    class DotNetAPI
     {
         static void Main()
         {

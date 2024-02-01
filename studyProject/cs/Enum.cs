@@ -13,7 +13,15 @@ namespace studyProject
         Low
     }
 
-    class Class15
+    enum Animal
+    {
+        Dog = 1,
+        Cat = 2,
+        Pig = 4,
+        Cow = 8
+    }
+
+    class Enum
     {
         static void Main()
         {
@@ -22,6 +30,14 @@ namespace studyProject
             Priorty low = Priorty.Low;
 
             Console.WriteLine($"{high},{normal},{low}");
+
+            Animal dog = Animal.Dog;
+            Animal cat = Animal.Cat;
+            Animal pig = Animal.Pig;
+            Animal cow = Animal.Cow;
+
+            Console.WriteLine($"{dog},{cat},{pig},{cow}");
+            Console.WriteLine($"{(int)dog},{(int)cat},{(int)pig},{(int)cow}");
         }
     }
 }

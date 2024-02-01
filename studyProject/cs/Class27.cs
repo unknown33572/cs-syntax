@@ -52,15 +52,6 @@ namespace studyProject
             List<Class27> groups = new List<Class27>();
             int N = records.Count;
 
-            /*
-            for(int i =0; i < records.Count; i++)
-            {
-                Console.WriteLine($"{records[i].Name} -> {records[i].Quantity}");
-            }
-
-            PrintData("값은 : ", records);
-            */
-
             for(int i = 0; i < N - 1; i++)
             {
                 for(int j = i + 1; j < N; j++)
@@ -73,21 +64,6 @@ namespace studyProject
                     }
                 }
             }
-            /*
-            for (int i = 0; i < N - 1; i++)
-            {
-                for (int j = i + 1; j < N; j++)
-                {
-                    if (records[i].Quantity < records[j].Quantity) // 내림차순 정렬 조건
-                    {
-                        var temp = records[i].Quantity;
-                        records[i].Quantity = records[j].Quantity;
-                        records[j].Quantity = temp;
-                    }
-                }
-            }
-            */
-            //PrintData("값은 : ", records);
 
             int subtotal = 0;
             for(int i = 0; i < N; i++)
