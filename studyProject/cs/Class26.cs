@@ -19,6 +19,7 @@ namespace studyProject
             {
                 indexes[scores[i]]++;
             }
+
             for(int i = 0; i < indexes.Length; i++)
             {
                 if(indexes[i] > max)

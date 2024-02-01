@@ -49,6 +49,11 @@ namespace studyProject
 
             foreach (var n in numbers)
                 Console.WriteLine("{0}\t", n); // \t는 탭을 의미 \n은 줄바꿈을 의미
+
+            var numbers2 = Enumerable.Repeat(100, 10);
+
+            foreach (var n in numbers2)
+                Console.WriteLine("{0}\t", n);
         }
     }
 }
