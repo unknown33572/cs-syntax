@@ -8,8 +8,12 @@ namespace studyProject
 {
     class Variable
     {
+        static string name = "D"; // 멤버변수, 필드변수(전역)
+
         static void Main(string[] args)
         {
+            string name = "I"; // 로컬변수, 메서드 안에서만 사용(지역)
+
             Console.WriteLine("Hello World!");
 
             string msg = string.Format("{0}님, {1}", "S", "안녕하세요");
