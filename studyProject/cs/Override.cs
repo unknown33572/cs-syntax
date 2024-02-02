@@ -16,12 +16,12 @@ namespace studyProject
         }
     }
 
-    class Class29
+    class Override
     {
         static void Main()
         {
             Me me = new Me();
-            Console.WriteLine(me);
+            Console.WriteLine(me); // ToString() 메서드를 오버라이딩 하지 않았기 때문에 출력값은 참조변수의 주소값임.
 
             ToStringMethod toStringMethod = new ToStringMethod();
             Console.WriteLine(toStringMethod);

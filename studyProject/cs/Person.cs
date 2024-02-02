@@ -8,7 +8,7 @@ namespace studyProject
 {
     class Person
     {
-        private string name = "홍길동";
+        private string name = "홍길동"; // 기본 필드 값
 
         public Person() { }
 
@@ -27,17 +27,20 @@ namespace studyProject
 
         public string walk()
         {
-            return name + "이(가) 걷습니다.";
+            return $"{ name }이(가) 걷습니다.";
         }
     }
 
-    class Class30
+    class Demo
     {
         static void Main()
         {
-            Person p1 = new Person("이순신");
-            p1.walk();
+            Person p1 = new Person("이순신"); // 인스턴스 생성하면서 필드 값 변경
+            Person p2 = new Person(); // 인스턴스 생성하면서 필드 값 변경 안함
+            Console.WriteLine(p1.walk());
+            Console.WriteLine(p2.walk());
             Console.WriteLine(p1.getName);
+            Console.WriteLine(p2.getName);
         }
     }
 }

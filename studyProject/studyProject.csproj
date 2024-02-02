@@ -36,7 +36,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cs\Collection.cs" />
+    <Compile Include="cs\Person.cs" />
     <Compile Include="Dul.Data\IBreadShop.cs" />
     <Compile Include="Dul.Data\OrderOption.cs" />
     <Compile Include="InMemoryDatabase\Category.cs" />
