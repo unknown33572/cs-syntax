@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-    class Class27
+    class Reference
     {
         public string Name
         {
@@ -22,24 +22,24 @@ namespace studyProject
 
         static void Main()
         {
-            List<Class27> GetAll()
+            List<Reference> GetAll()
             {
-                return new List<Class27>
+                return new List<Reference>
                 {
-                    new Class27 { Name = "Radio", Quantity = 3},
-                    new Class27 { Name = "TV", Quantity = 1},
-                    new Class27 { Name = "Radio", Quantity = 2},
-                    new Class27 { Name = "DVD", Quantity = 4},
-                    new Class27 { Name = "GameConsole", Quantity = 2},
-                    new Class27 { Name = "Computer", Quantity = 3},
-                    new Class27 { Name = "Computer", Quantity = 3},
-                    new Class27 { Name = "Radio", Quantity = 1},
-                    new Class27 { Name = "Phone", Quantity = 8},
-                    new Class27 { Name = "AirConditioner", Quantity = 1}
+                    new Reference { Name = "Radio", Quantity = 3},
+                    new Reference { Name = "TV", Quantity = 1},
+                    new Reference { Name = "Radio", Quantity = 2},
+                    new Reference { Name = "DVD", Quantity = 4},
+                    new Reference { Name = "GameConsole", Quantity = 2},
+                    new Reference { Name = "Computer", Quantity = 3},
+                    new Reference { Name = "Computer", Quantity = 3},
+                    new Reference { Name = "Radio", Quantity = 1},
+                    new Reference { Name = "Phone", Quantity = 8},
+                    new Reference { Name = "AirConditioner", Quantity = 1}
                 };
             }
 
-            void PrintData(String message, List<Class27> data)
+            void PrintData(String message, List<Reference> data)
             {
                 Console.WriteLine(message);
                 foreach(var item in data)
@@ -48,8 +48,8 @@ namespace studyProject
                 }
             }
 
-            List<Class27> records = GetAll();
-            List<Class27> groups = new List<Class27>();
+            List<Reference> records = GetAll();
+            List<Reference> groups = new List<Reference>();
             int N = records.Count;
 
             for(int i = 0; i < N - 1; i++)
@@ -71,7 +71,7 @@ namespace studyProject
                 subtotal += records[i].Quantity;
                 if ((i + 1) == N || (records[i].Name != records[i + 1].Name))
                 {
-                    groups.Add(new Class27 { Name = records[i].Name, Quantity = subtotal });
+                    groups.Add(new Reference { Name = records[i].Name, Quantity = subtotal });
                     subtotal = 0;
                 }
             }
@@ -79,6 +79,15 @@ namespace studyProject
             PrintData("기본 정렬 데이터 : ", records);
             PrintData("이름으로 그룹화된 데이터 : ", groups);
             Console.WriteLine(groups.Count);
+
+            StaticMember();
+            //InstanceMember();
+            Reference class27InstanceMember = new Reference();
+            class27InstanceMember.InstanceMember();
         }
+
+    void InstanceMember() => Console.WriteLine("인스턴스함수"); // 인스턴스 함수는 정적함수와 달리 클래스의 인스턴스를 생성해야만 호출할 수 있음
+        
+    public static void StaticMember() => Console.WriteLine("정적멤버함수");
     }
 }
