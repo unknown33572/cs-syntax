@@ -41,6 +41,8 @@ namespace studyProject
             {
                 Console.WriteLine(item.Key + " : " + item.Value);
             }
+
+            Console.WriteLine(data[2]);
         }
     }
 }
