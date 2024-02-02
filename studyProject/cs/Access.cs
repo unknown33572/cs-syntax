@@ -18,7 +18,7 @@ namespace studyProject
         public string Street { get; set; }
     }
 
-    class Class32
+    class Access
     {
         static void Main()
         {
