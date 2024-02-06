@@ -70,5 +70,11 @@
   <ItemGroup>
     <Content Include="js\JavaScript14.js" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\JavaScript15.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\JavaScript16.js" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
