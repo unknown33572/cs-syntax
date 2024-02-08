@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-	class Class37
+	class EventHandler
 	{
-		public delegate void EventHandler();
+		public delegate void eventHandlerDelegate();
 
-		public event EventHandler Click;
+		public event eventHandlerDelegate Click;
 
 		public void OnClick()
 		{
@@ -25,7 +25,7 @@ namespace studyProject
 	{
 		static void Main()
 		{
-			Class37 btn = new Class37();
+			EventHandler btn = new EventHandler();
 
 			btn.Click += Hi1;
 			btn.Click += Hi2;

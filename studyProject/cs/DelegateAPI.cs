@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-  class Class36
+  class DelegateAPI
   {
     static Action<string> printfCustom = Console.WriteLine;
 
@@ -29,7 +29,6 @@ namespace studyProject
       Console.WriteLine(String.Join(", ", arr));
 
       Calc(3, 3, (x1, y1) => x1 * y1);
-
 		}
 
     static void InsertionSort(int[] arr)

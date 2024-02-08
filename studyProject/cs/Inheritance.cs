@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-	class Class38 // 지정하지않으면 object 클래스 상속됨
+	class Inheritance // 지정하지않으면 object 클래스 상속됨
 	{
 		public void Foo() => Console.WriteLine("Parent Class Called");
 
@@ -16,8 +16,8 @@ namespace studyProject
 		}
 	}
 
-	class Class38_Child : Class38
-	{
+	class Inheritance_Child : Inheritance
+  {
 		public void Bar() => Console.WriteLine("Child Class Called");
 	}
 
@@ -25,7 +25,7 @@ namespace studyProject
 	{
 		static void Main()
 		{
-			Class38_Child child = new Class38_Child();
+      Inheritance_Child child = new Inheritance_Child();
 
 			child.Foo(); // 부모 클래스 메서드 사용가능
 			child.Bar();
@@ -40,23 +40,23 @@ namespace studyProject
 		}
 	}
 
-	class WebDeveloper : Class38
-	{
+	class WebDeveloper : Inheritance
+  {
 		public override string ToString()
 		{
 			return "웹개발자";
 		}
 	}
 
-	class MobileDeveloper : Class38
-	{
+	class MobileDeveloper : Inheritance
+  {
 		public override string ToString()
 		{
 			return "모바일개발자";
 		}
 	}
 
-	class ApplicationDeveloper : Class38
+	class ApplicationDeveloper : Inheritance
 	{
 		public override string ToString()
 		{
