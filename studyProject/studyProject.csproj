@@ -36,7 +36,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cs\Inheritance.cs" />
+    <Compile Include="cs\Class39.cs" />
     <Compile Include="Dul.Data\IBreadShop.cs" />
     <Compile Include="Dul.Data\OrderOption.cs" />
     <Compile Include="InMemoryDatabase\Category.cs" />
@@ -84,6 +84,15 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="js\JavaScript19.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\JavaScript.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\JavaScript20.js" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="js\JavaScript21.js" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
