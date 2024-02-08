@@ -6,17 +6,17 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-    class Class33
+    class Indexers
     {
         private string[] week;
 
-        public Class33()
+        public Indexers()
         {
             Length = 7;
             week = new string[Length];
         }
 
-        public Class33(int length)
+        public Indexers(int length)
         {
             Length = length;
             week = new string[Length];
@@ -24,7 +24,7 @@ namespace studyProject
 
         public int Length { get; }
 
-        public string this[int index]
+        public string this[int index] // 인덱스는 this 키워드로 정의하고 []로 묶어서 사용함
         {
             get { return week[index]; }
             set { week[index] = value; }
@@ -32,7 +32,7 @@ namespace studyProject
 
         static void Main()
         {
-            Class33 week = new Class33(3);
+            Indexers week = new Indexers(3);
 
             week[0] = "일요일";
             week[1] = "월요일";

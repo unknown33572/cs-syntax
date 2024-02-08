@@ -7,7 +7,7 @@ using System.Collections;
 
 namespace studyProject
 {
-    class Class34
+    class Iterator
     {
         private Hashtable names = new Hashtable();
 
@@ -47,7 +47,7 @@ namespace studyProject
 
         static void Main()
         {
-            var nickName = new Class34();
+            var nickName = new Iterator();
 
             nickName["홍길동"] = "도적";
             nickName["이순신"] = "장군";
