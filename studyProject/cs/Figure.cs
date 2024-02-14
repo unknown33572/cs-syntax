@@ -6,12 +6,11 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-	public abstract class Class40
+	public abstract class Figure
 	{
-		public abstract double GetArea();
+		public abstract double GetArea(); // abstract method
 	}
-
-	public class Square : Class40
+	public class Square : Figure
 	{
 		private int size;
 
@@ -27,7 +26,7 @@ namespace studyProject
 			this.size = size;
 		}
 
-		public override double GetArea()
+		public override double GetArea() // implementation of abstract method
 		{
 			return size * size;
 		}

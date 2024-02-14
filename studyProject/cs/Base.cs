@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-	class Class39
+	class Base
 	{
 
 	}
@@ -33,10 +33,12 @@ namespace studyProject
 		}
 	}
 
+	/*
 	public class GenesisCar : HyundaiCar //sealed 키워드로 인해 상속불가
 	{
 
 	}
+	*/
 
 	class BaseKeywordDemo
 	{
