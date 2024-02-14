@@ -7,19 +7,19 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-	class Class44
+	class IEnumerator
 	{
 		static void Main()
 		{
 			string[] names = { ".Net", "Spring" };
 
-			foreach(string name in names)
-			{
-				Console.WriteLine(name);
-			}
+			//foreach(string name in names)
+			//{
+			//	Console.WriteLine(name);
+			//}
 
-			IEnumerator list = names.GetEnumerator();
-			while(list.MoveNext())
+      System.Collections.IEnumerator list = names.GetEnumerator();
+			while(list.MoveNext()) // MoveNext()는 다음 요소가 있으면 true 반환, 더 이상 요소가 없으면 false를 반환
 			{
 				Console.WriteLine(list.Current);
 			}

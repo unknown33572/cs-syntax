@@ -27,7 +27,7 @@ namespace studyProject
 		static void Main()
 		{
 			Pet pet = new Pet();
-			((IDog)pet).Eat();
+			((IDog)pet).Eat(); // 형변환을 통해 인터페이스 메서드 호출
 			((ICat)pet).Eat();
 
 			IDog dog = new Pet();

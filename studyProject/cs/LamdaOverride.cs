@@ -6,14 +6,14 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-	class Class41
+	class LamdaOverride
 	{
 		public virtual void Hi1() => Console.WriteLine("기본 : 안녕");
 		public void Hi2() => Console.WriteLine("기본 : 반가워");
 		public void Hi3() => Console.WriteLine("기본 : 또 만나");
 	}
 
-	class Class41_Child : Class41
+	class LamdaOverride_Child : LamdaOverride
 	{
 		public override void Hi1()
 		{
@@ -32,11 +32,16 @@ namespace studyProject
 	{
 		static void Main()
 		{
-			Class41_Child class41_Child = new Class41_Child();
+      LamdaOverride_Child _Child = new LamdaOverride_Child();
+			LamdaOverride _Parent = new LamdaOverride();
 
-			class41_Child.Hi1();
-			class41_Child.Hi2();
-			class41_Child.Hi3();
+			_Child.Hi1();
+			_Child.Hi2();
+			_Child.Hi3();
+
+			_Parent.Hi1();
+			_Parent.Hi2();
+			_Parent.Hi3();
 		}
 	}
 }
