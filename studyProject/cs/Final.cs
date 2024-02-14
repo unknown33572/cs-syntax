@@ -106,6 +106,10 @@ namespace studyProject
             sportsCar.run();
             sportsCar.run(0);
             sportsCar.run(1);
+
+            Car btnCar = new Car("테슬라");
+            btnCar.click += new Car.eventHandler(btnCar.run);
+            btnCar.onClick();
         }
     }
 }
