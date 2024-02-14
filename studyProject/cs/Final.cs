@@ -38,6 +38,8 @@ namespace studyProject
 
         public void run() => Console.WriteLine("{0} 차가 움직입니다.", name);
 
+        public void run(int i) => Console.WriteLine("{0} 차가 움직입니다.", names[i]); // 메서드 오버로딩(overloading)
+
         public string Name
         {
             get { return name; }
@@ -88,11 +90,22 @@ namespace studyProject
         static void Main()
         {
             Car campingCar = new Car("캠핑카");
+            Console.WriteLine(campingCar.Length);
             campingCar.run();
 
-            Car sportsCar = new Car();
+            Car sportsCar = new Car(5);
             sportsCar.Name = "스포츠카";
+            Console.WriteLine(sportsCar.Length);
+            sportsCar[0] = "페라리";
+            sportsCar[1] = "람보르기니";
+            sportsCar[2] = "포르쉐";
+            //for(int i = 0; i < sportsCar.Length; i++)
+            //{
+            //  Console.WriteLine(sportsCar[i]);
+            //}
             sportsCar.run();
+            sportsCar.run(0);
+            sportsCar.run(1);
         }
     }
 }
