@@ -49,12 +49,12 @@ namespace studyProject
             get { return length; }
         }
 
-        ~Car()
+        ~Car() // 소멸자
         {
             Console.WriteLine("{0} 차가 멈췄습니다.", name);
         }
 
-        public string this[int index]
+        public string this[int index] // 인덱서
         {
             get { return names[index]; }
             set { names[index] = value; }
@@ -64,7 +64,7 @@ namespace studyProject
         {
             for(int i = 0; i < length; i++)
             {
-                yield return names[i];
+                yield return names[i]; // yield return은 반복자를 반환
             }
         }
 
