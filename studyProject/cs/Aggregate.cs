@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-    class Class56
+    class Aggregate
     {
         static void Main()
         {

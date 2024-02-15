@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-    class Class46
+    class LamdaProperty
     {
         private string name;
 
@@ -18,7 +18,7 @@ namespace studyProject
     {
         static void Main()
         {
-            Class46 cs46 = new Class46();
+            LamdaProperty cs46 = new LamdaProperty();
             cs46.setName("C#");
             Console.WriteLine(cs46.GetName());
         }

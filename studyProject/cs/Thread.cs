@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-    class Class52
+    class Thread
     {
         static void Sum(int a, int b) => Console.WriteLine($"{a} + {b} = {a + b}");
         static void Multiple(int a, int b) => Console.WriteLine($"{a} x {b} = {a * b}");

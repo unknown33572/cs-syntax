@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-    class Class55
+    class IO
     {
         public string Name { get; set; }
         public string phoneNumber { get; set; }

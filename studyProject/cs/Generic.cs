@@ -11,6 +11,18 @@ namespace studyProject
     {
         static void Main()
         {
+            List<Generic> people = new List<Generic>
+            {
+                new Generic { name = "홍길동" },
+                new Generic { name = "이순신" },
+                new Generic { name = "유관순" }
+            };
+
+            foreach (var person in people)
+            {
+              Console.WriteLine(person.name);
+            }
+
             Stack stack = new Stack();
             stack.Push(1234);
             stack.Push(5678);
