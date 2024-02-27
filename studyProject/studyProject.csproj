@@ -47,6 +47,8 @@
     <Content Include="js\JavaScript1.js" />
     <Content Include="js\JavaScript2.js" />
     <Content Include="js\JavaScript22.js" />
+    <Content Include="js\JavaScript23.js" />
+    <Content Include="js\JavaScript24.js" />
     <Content Include="js\JavaScript3.js" />
     <Content Include="js\JavaScript4.js" />
     <Content Include="js\JavaScript5.js" />
