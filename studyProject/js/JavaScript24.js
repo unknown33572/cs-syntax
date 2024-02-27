@@ -3,7 +3,8 @@
   stringArr = my_string.split('');
   var temp = stringArr.slice(s, e + 1).reverse();
   for (var i = s; i <= e; i++) {
-    stringArr[i] = temp[i - e];
+    stringArr[i] = temp[i - s];
+    answer = stringArr.join('');
   }
-  return answer = stringArr.join('');
+  return answer;
 }
