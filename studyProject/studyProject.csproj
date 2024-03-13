@@ -42,6 +42,25 @@
     <Compile Include="InMemoryDatabase\CategoryRepositoryInMemory.cs" />
     <Compile Include="InMemoryDatabase\ICategoryRepository.cs" />
     <Compile Include="InMemoryDatabase\InMemoryDatabase.cs" />
+    <Compile Include="winforms\calculator\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="winforms\calculator\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="winforms\lotto\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="winforms\lotto\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="winforms\Program.cs" />
+    <Compile Include="winforms\list\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="winforms\list\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Content Include="js\JavaScript1.js" />
@@ -52,6 +71,8 @@
     <Content Include="js\Javascript25.js" />
     <Content Include="js\JavaScript26.js" />
     <Content Include="js\JavaScript27.js" />
+    <Content Include="js\JavaScript28.js" />
+    <Content Include="js\JavaScript29.js" />
     <Content Include="js\JavaScript3.js" />
     <Content Include="js\JavaScript4.js" />
     <Content Include="js\JavaScript5.js" />
@@ -102,6 +123,24 @@
   <ItemGroup>
     <Folder Include="cs\" />
     <Folder Include="TestCase\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="winforms\calculator\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="winforms\list\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="winforms\lotto\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
