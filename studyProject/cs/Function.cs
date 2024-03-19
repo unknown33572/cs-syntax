@@ -91,16 +91,16 @@ namespace studyProject
             switch (operation)
             {
                 case "+":
-                    Console.WriteLine(Add(x, y));
+                    result = Add(x, y);
                     break;
                 case "-":
-                    Console.WriteLine(Subtract(x, y));
+                    result = Subtract(x, y);
                     break;
                 case "*":
-                    Console.WriteLine(Multiply(x, y));
+                    result = Multiply(x, y);
                     break;
                 case "/":
-                    Console.WriteLine(Divide(x, y));
+                    result = Divide(x, y);
                     break;
                 default:
                     Console.WriteLine("보기중에서만 입력해주세요.");
@@ -121,6 +121,12 @@ namespace studyProject
             Console.WriteLine("계산기 프로그램입니다.");
             Console.WriteLine("+, -, *, / 중에 고르세요");
             string operation = Console.ReadLine();
+            if(operation != "+" && operation != "-" && operation != "*" && operation != "/")
+            {
+                Console.WriteLine("잘못된 입력입니다.");
+                Console.WriteLine("다시 입력하세요.");
+                operation = Console.ReadLine();
+            }
 
             Console.WriteLine("첫 번째 숫자를 입력하세요:");
             int num1 = Convert.ToInt32(Console.ReadLine());
@@ -128,7 +134,8 @@ namespace studyProject
             Console.WriteLine("두 번째 숫자를 입력하세요:");
             int num2 = Convert.ToInt32(Console.ReadLine());
 
-            virtualFunction.calculate(num1, num2, operation);
+            int result = virtualFunction.calculate(num1, num2, operation);
+            Console.WriteLine($"결과는 {result}입니다.");
         }
 
     }

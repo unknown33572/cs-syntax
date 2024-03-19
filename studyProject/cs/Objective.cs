@@ -6,20 +6,20 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-    class Class50
+    class Objective
     {
         public string Number { get; set; }
         public string AreaName { get; set; }
 
         static void Main()
         {
-            List<Class50> areas = new List<Class50>();
+            List<Objective> areas = new List<Objective>();
 
-            Class50 seoul = new Class50();
+            Objective seoul = new Objective();
             seoul.Number = "02";
             seoul.AreaName = "서울";
 
-            Class50 sejong = new Class50() // object initalize
+            Objective sejong = new Objective() // object initalize
             {
                 Number = "03",
                 AreaName = "세종"

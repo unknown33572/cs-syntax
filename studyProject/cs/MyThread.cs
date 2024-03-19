@@ -7,11 +7,15 @@ using System.Threading.Tasks;
 
 namespace studyProject
 {
-    class Class51
+
+    class MyThread
     {
+        public delegate void ThreadStart();
+        public static void Hi() { Console.WriteLine("Hi"); }
+
         private static void csIDE()
         {
-            Thread.Sleep(3000);
+            Thread.Sleep(1000);
             Console.WriteLine("[3] IDE : Visual Studio");
         }
 
@@ -23,7 +27,7 @@ namespace studyProject
 
         private static void jsIDE()
         {
-            Thread.Sleep(3000);
+            Thread.Sleep(2000);
             Console.WriteLine("[1] IDE : Visual Studio Code");
         }
 
@@ -35,11 +39,14 @@ namespace studyProject
 
             Thread t1 = new Thread(jsIDE);
             Thread t2 = new Thread(javaIDE);
-            Thread t3 = new Thread(cs);
+            Thread t3 = new Thread(csIDE);
 
             t1.Start();
             t2.Start();
             t3.Start();
+
+            var t4 = new Thread(new System.Threading.ThreadStart(Hi));
+            t4.Start();
         }
     }
 }

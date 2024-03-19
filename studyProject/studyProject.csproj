@@ -36,6 +36,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cs\Asynchronous.cs" />
     <Compile Include="Dul.Data\IBreadShop.cs" />
     <Compile Include="Dul.Data\OrderOption.cs" />
     <Compile Include="InMemoryDatabase\Category.cs" />
@@ -54,7 +55,6 @@
     <Compile Include="winforms\lotto\Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="winforms\Program.cs" />
     <Compile Include="winforms\list\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -68,13 +68,14 @@
     <Content Include="js\JavaScript22.js" />
     <Content Include="js\JavaScript23.js" />
     <Content Include="js\JavaScript24.js" />
-    <Content Include="js\Javascript25.js" />
+    <Content Include="js\JavaScript25.js" />
     <Content Include="js\JavaScript26.js" />
     <Content Include="js\JavaScript27.js" />
     <Content Include="js\JavaScript28.js" />
     <Content Include="js\JavaScript29.js" />
     <Content Include="js\JavaScript3.js" />
     <Content Include="js\JavaScript30.js" />
+    <Content Include="js\JavaScript31.js" />
     <Content Include="js\JavaScript4.js" />
     <Content Include="js\JavaScript5.js" />
     <Content Include="js\JavaScript6.js" />
@@ -122,7 +123,6 @@
     <Content Include="js\JavaScript21.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="cs\" />
     <Folder Include="TestCase\" />
   </ItemGroup>
   <ItemGroup>
