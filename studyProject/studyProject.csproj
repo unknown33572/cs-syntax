@@ -76,6 +76,8 @@
     <Content Include="js\JavaScript3.js" />
     <Content Include="js\JavaScript30.js" />
     <Content Include="js\JavaScript31.js" />
+    <Content Include="js\JavaScript32.js" />
+    <Content Include="js\JavaScript33.js" />
     <Content Include="js\JavaScript4.js" />
     <Content Include="js\JavaScript5.js" />
     <Content Include="js\JavaScript6.js" />
