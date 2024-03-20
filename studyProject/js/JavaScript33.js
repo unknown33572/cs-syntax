@@ -43,3 +43,9 @@ const colors = dogs.reduce((colors, dog) => {
 }, []);
 
 console.log(colors);
+
+const object = { a: 1, b: 2, c: 3 };
+
+for (const keyValue in object) {
+  console.log(object[keyValue]);
+}
