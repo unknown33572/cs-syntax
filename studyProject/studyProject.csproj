@@ -36,7 +36,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cs\Asynchronous.cs" />
     <Compile Include="Dul.Data\IBreadShop.cs" />
     <Compile Include="Dul.Data\OrderOption.cs" />
     <Compile Include="InMemoryDatabase\Category.cs" />
@@ -127,6 +126,7 @@
     <Content Include="js\JavaScript21.js" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="cs\" />
     <Folder Include="TestCase\" />
   </ItemGroup>
   <ItemGroup>
@@ -146,6 +146,12 @@
     <EmbeddedResource Include="winforms\lotto\Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Dinner\Dinner.Common.csproj">
+      <Project>{0240fd75-6ff0-489c-96fd-6413e89eafc4}</Project>
+      <Name>Dinner.Common</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
