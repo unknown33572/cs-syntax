@@ -21,7 +21,7 @@ function makeEgg() {
     setTimeout(() => {
       console.log("후라이가 완성되었습니다.")
     }, 1000);
-    resolve();
+      resolve(); // resolve를 setTimeout 안에 선언하지 않아서 바로 then 실행됨
   }).then(() => {
     console.log("게임중");
   });
