@@ -22,3 +22,6 @@ for (const color of getColor()) {
 }
 
 console.log(addedColor);
+
+// 기여도 늘리기
+// 기여도 늘리기
