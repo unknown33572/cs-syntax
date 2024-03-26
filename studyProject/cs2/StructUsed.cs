@@ -11,7 +11,7 @@ namespace studyProject.cs2
         public double t0, t1, t2, t3, t4, t5, t6, t7, t8, t9;
     }
 
-    class Class1
+    class StructUsed
     {
         private static double calc(TenNum tenNum)
         {

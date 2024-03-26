@@ -36,7 +36,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cs2\Class1.cs" />
+    <Compile Include="cs2\StructUsed.cs" />
     <Compile Include="winforms\calculator\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
