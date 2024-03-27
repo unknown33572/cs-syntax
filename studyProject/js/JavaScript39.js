@@ -12,3 +12,17 @@ Coupon.prototype.getExpirationMessage = function () {
 }
 
 console.log(coupon.getExpirationMessage());
+
+
+function solution(myString, pat) {
+  var answer = 0;
+  for(var i = 0; i < myString.length; i++) {
+    if(myString[i] === pat[0]) {
+      var temp = myString.slice(i, i + pat.length);
+      if(temp === pat) {
+        answer++;
+      }
+    }
+  }
+  return answer;
+}
