@@ -36,8 +36,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cs2\Code.cs" />
-    <Compile Include="cs2\StructUsed.cs" />
+    <Compile Include="cs2\Class1.cs" />
     <Compile Include="winforms\calculator\Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +80,7 @@
     <Content Include="js\JavaScript39.js" />
     <Content Include="js\JavaScript4.js" />
     <Content Include="js\JavaScript40.js" />
+    <Content Include="js\JavaScript41.js" />
     <Content Include="js\JavaScript5.js" />
     <Content Include="js\JavaScript6.js" />
     <Content Include="js\JavaScript7.js" />
