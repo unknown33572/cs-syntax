@@ -36,6 +36,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cs\DBConnPractice.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -71,6 +72,7 @@
     <Content Include="js\JavaScript43.js" />
     <Content Include="js\JavaScript44.js" />
     <Content Include="js\JavaScript45.js" />
+    <Content Include="js\JavaScript46.js" />
     <Content Include="js\JavaScript5.js" />
     <Content Include="js\JavaScript6.js" />
     <Content Include="js\JavaScript7.js" />
@@ -118,14 +120,17 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="cs2\" />
-    <Folder Include="cs\" />
     <Folder Include="Dul.Data\" />
     <Folder Include="InMemoryDatabase\" />
     <Folder Include="TestCase\" />
   </ItemGroup>
   <ItemGroup>
+    <Reference Include="Oracle.ManagedDataAccess">
+      <HintPath>..\Oracle\Oracle.ManagedDataAccess.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Data.OracleClient" />
     <Reference Include="System.Drawing" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
