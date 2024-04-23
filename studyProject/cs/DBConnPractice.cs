@@ -23,7 +23,7 @@ namespace studyProject.cs
                     connection.Open();
                     Console.WriteLine("데이터베이스에 성공적으로 연결되었습니다.");
 
-                    // SQL 쿼리
+                    // SQL Query
                     //string sql = "SELECT * FROM EDU.PRACTICE_USER";  // your_table은 조회할 데이터베이스 테이블 이름
 
                     string sql2 = "select * from EDU.PRACTICE_USER where USER_ID = ?";

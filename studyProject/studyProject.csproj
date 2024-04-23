@@ -36,7 +36,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="cs\DBConnPractice.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -120,6 +119,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="cs2\" />
+    <Folder Include="cs\" />
     <Folder Include="Dul.Data\" />
     <Folder Include="InMemoryDatabase\" />
     <Folder Include="TestCase\" />
