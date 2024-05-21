@@ -115,7 +115,7 @@ function solution6(arr, queries) {
   return answer;
 }
 
-console.log(solution6([0, 1, 2, 3, 4], [[0, 3], [1, 2], [1, 4]]));
+//console.log(solution6([0, 1, 2, 3, 4], [[0, 3], [1, 2], [1, 4]]));
 //[0, 1, 2, 3, 4]
 
 //[[0, 3],
@@ -123,3 +123,21 @@ console.log(solution6([0, 1, 2, 3, 4], [[0, 3], [1, 2], [1, 4]]));
 // [1, 4]]
 
 //[3, 4, 1, 0, 2]
+
+function solution7(arr, queries) {
+  var answer = [];
+  for (let i = 0; i < queries.length; i++) {
+    let s = queries[i][0];
+    let e = queries[i][1];
+    let k = queries[i][2];
+    for (let j = s; j <= e; j++) {
+      if (j % k == 0) {
+        arr[j]++;
+      }
+    }
+    answer = arr;
+  }
+  return answer;
+}
+
+console.log(solution7([0, 1, 2, 4, 3],[[0, 4, 1], [0, 3, 2], [0, 3, 3]]));
