@@ -43,6 +43,8 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="js\JavaScript48.js" />
+    <Content Include="js\JavaScript47.js" />
     <Content Include="js\JavaScript1.js" />
     <Content Include="js\JavaScript2.js" />
     <Content Include="js\JavaScript22.js" />

@@ -140,4 +140,64 @@ function solution7(arr, queries) {
   return answer;
 }
 
-console.log(solution7([0, 1, 2, 4, 3],[[0, 4, 1], [0, 3, 2], [0, 3, 3]]));
+//console.log(solution7([0, 1, 2, 4, 3], [[0, 4, 1], [0, 3, 2], [0, 3, 3]]));
+
+//function solution(arr, queries) {
+//  return queries.reduce((bucket, [s, e, k]) => {
+//    for (let i = s; i <= e; i += 1) {
+//      if (i % k === 0) bucket[i] += 1
+//    }
+//    return bucket
+//  }, [...arr])
+//}
+
+//function solution(arr, queries) {
+//  queries.forEach(([s, e, k]) => {
+//    for (; s <= e; s++) {
+//      !(s % k) && arr[s]++;
+//    }
+//  });
+//  return arr;
+//}
+
+//function solution(arr, queries) {
+//  for (let [s, e, k] of queries) {
+//    for (let i = s; i <= e; i++) {
+//      if (i % k === 0) arr[i]++;
+//    }
+//  }
+//  return arr;
+//}
+
+//function solution(arr, queries) {
+//  for (const query of queries) {
+//    const [s, e, k] = [query[0], query[1], query[2]]
+//    for (let i = s; i <= e; i++) {
+//      if (i % k === 0) arr[i]++
+//    }
+//  }
+//  return arr
+//}
+
+function solution8(arr) {
+  var answer = 0;
+  var compare = [];
+  for (let k = 0; ; k++) {
+    for (let i = 0; i < arr.length; i++) {
+      compare.push(arr[i]);
+      if (arr[i] >= 50 && arr[i] % 2 == 0) {
+        arr[i] = arr[i] / 2;
+      } else if (arr[i] < 50 && arr[i] % 2 == 1) {
+        arr[i] = (arr[i] * 2) + 1;
+      }
+    }
+    if (arr.every((val, index) => val === compare[index])) {
+      return answer;
+    } else {
+      compare = [];
+      answer++;
+    }
+  }
+}
+
+console.log(solution8([1, 2, 3, 100, 99, 98]));
