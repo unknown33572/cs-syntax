@@ -36,6 +36,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cs2\Money.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -74,7 +75,9 @@
     <Content Include="js\JavaScript44.js" />
     <Content Include="js\JavaScript45.js" />
     <Content Include="js\JavaScript46.js" />
+    <Content Include="js\JavaScript49.js" />
     <Content Include="js\JavaScript5.js" />
+    <Content Include="js\JavaScript50.js" />
     <Content Include="js\JavaScript6.js" />
     <Content Include="js\JavaScript7.js" />
     <Content Include="js\JavaScript8.js" />
@@ -120,7 +123,6 @@
     <Content Include="js\JavaScript21.js" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="cs2\" />
     <Folder Include="cs\" />
     <Folder Include="Dul.Data\" />
     <Folder Include="InMemoryDatabase\" />
